@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PyTalks</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<nav id="navbar">
+			<header>PyTalks Content</header>
+			<a href="#Hello_World:_Variables" class="nav-link">Hello World: Variables</a>
+			<a href="#Basic_Data_Structures" class="nav-link">Basic Data Structures</a>
+			<a href="#String" class="nav-link">String</a>
+			<a href="#Condition_Statements" class="nav-link">Condition Statements</a>
+			<a href="#Loops" class="nav-link">Loops</a>
+			<a href="#Functions" class="nav-link">Functions</a>
+			<a href="#Intro_to_OPP" class="nav-link">Intro to OPP</a>
+			<a href="#Moduls_and_Packets" class="nav-link">Moduls and Packets</a>
+			<a href="#References" class="nav-link">References</a>
+		</nav>
+		<main id="main-doc">
+			<section>
+				<header>What is "PyTalks"</header>
+				<p>"PyTalks" is a python video tutorial series created by "AI Akdeniz" 
+					which is student club of <b>Akdeniz University</b>. This documents used 
+					in this tutorial. You can watch <a href="https://www.youtube.com/playlist?list=PLO9MeHg_rUWAp2_PiVtkwOa6Xv3F5BAr9" target="_blank">PyTalks</a> on YouTube.
+				</p>
+			</section>
+			<section class="main-section" id="Hello_World:_Variables">
+				<header>Hello World: Variables</header>
+				<figure>
+					<img src="img/pytalks.jpeg">
+					<figcaption>PyTakls poster</figcaption>
+				</figure>
+
+				<ol>
+					<li>
+						<h3>Algoritma nedir?</h3>	
+						<p>Algoritma, belli bir problemi çözmek veya belirli bir amaca ulaşmak için
+						tasarlanan yoldur. Matematikte ve bilgisayar biliminde bir işi yapmak için
+						tanımlanan, bir başlangıç durumundan başladığında, açıkça belirlenmiş bir
+						son durumunda sonlanan, sonlu işlemler kümesidir.
+						</p>
+					</li>
+					<li>
+						<h3>Akış Şeması</h3>
+						<div>
+							<img src="img/flow-chart.png">	
+						</div>
+						<div>
+							<img src="img/flow-chart-example.png">	
+						</div>
+					</li>
+					</li>
+					<li>
+						<h3>Değişkenler ve veri tipleri</h3>
+						<p>"type" fonsiyonu ile degisken tipi belirnebilir.
+						 Tip değitirmede -“str”, “int” ve “float”- fonksiyonları tip 
+						 donusumu icin kullanilir.
+						</p>
+						<ul>
+							<li>String</li>
+							<li>Integer</li>
+							<li>Float</li>
+							<li>Boolean</li>
+						</ul>
+					</li>
+				</ol>
+			</section>
+			<section class="main-section" id="Basic_Data_Structures">
+				<header>Basic Data Structures</header>
+				<ol>
+					<li>
+						<ul>
+							<li>+,-, /, * , **(üst işlemi) for int and float</li>
+							<li>%(kalan) işlemi</li>
+							<li>+, * on string</li>
+							<li>boolean operator(and, or, not)</li>
+						</ul>
+					</li>
+					<li>
+						<p>Dictionary</p>
+						<img src="img/dictionary.png">
+					</li>
+					<li>
+						<p>List</p>
+						<img src="img/list.png">
+					<li>
+						<p>Tuple</p>	
+						<img src="img/tuple.png">
+					</li>
+					<li>
+						<p>Sets</p>	
+						<img src="img/sets.png">
+					</li>
+				</ol>
+			</section>
+			<section class="main-section" id="String">
+				<header>String</header>
+				<ol>
+					<li>
+						<p>Setler(Kumerler)</p>
+						<img src="img/set-2.png">
+					</li>
+					<li>
+						<p>String Formatlama</p>
+						<img src="img/str-format.png">
+					</li>
+				</ol>
+			</section>
+			<section class="main-section" id="Condition_Statements">
+				<header>Condition Statements</header>
+				<p>NOT FOUND</p>
+			</section>
+			<section class="main-section" id="Loops">
+				<header>Loops</header>
+				<ol>
+
+					<li>
+						<p><b>For Loop:</b> “for” dögüsü “iterable” objeler üzerinde objenin elemanlarına teker
+					teker erişmek veya aynı kod parçasını belirlenen sayıda execute etmek
+					için kullanılır.
+					</p>
+						<pre>
+					   		<code>
+    for &#60;değişken_ismi&#62; in &#60;iterable_object&#62;:
+        #inteted code 
+						   	</code>
+						</pre>
+						<p>“range(start, stop, step)” fonksiyonu iterable object oluşturmak için
+						kullanılabilir.(start ve step parametreleri opsiyoneldir)
+						</p>
+
+					</li>
+					<li>
+						<p><b>While Loop:</b>
+							Boolean ifadesi doğru oldukça çalışmayı sürdüren bir diğer
+							döngüdür.		
+						</p>
+						<pre>
+					   		<code>
+   while&#60;boolean condition>:
+      #intented code block
+						   	</code>
+						</pre>
+					</li>
+					<li>
+						<p><b>Break and Countinue:</b>
+							Bu özel keywordler öngüyü kontrol etmek için
+							kullanılır.
+						</p>
+						<ul>
+							<li>
+								<b>Break:</b> döngüden çıkmak için kullnılır(exit gibi düşünülebilir).
+							</li>
+							<li>
+								<b>Continue:</b> Döngün bir sonraki adıma atlanmasını sağlar(skip gibi
+								düşünülebilir).
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p><b>Dögüden sonra “else” kullanmak:</b> C syntax dillerde(C, C++, Java vb.)
+						bulunmayan bu özellik “else” ifadesinin while ya da for dögüsüne
+						bağlanmasına olanak sağlar. Döngü sonlandıktan sonra else kısmındaki code
+						bloğu çalıştırılır.
+						</p>
+						<pre>
+					   		<code>
+    while &#60;boolean condition&#62;:
+        #intented code block
+    else:
+        #intented code block
+						   	</code>
+						</pre>
+					</li>
+					</li>
+				</ol>
+			</section>
+			<section class="main-section" id="Intro_to_OPP">
+				<header>Intro to OPP</header>
+				<ol>
+					<li>
+						<p><b>Geri Dönüşsüz Fonksiyonlar:</b>
+							 Geri dönüşsüz fonsiyonlar çağırıldıklarıda fonksiyon gövdesinde
+							tanımalanan kod parçasını çalıştırılar ve herhangi bir değer dönmezler.
+							Fonsiyonlar parametre içerebilir-bir ya da birden fazla- içermeyebilir.
+						</p>
+						<pre>
+					   		<code>
+    def my_func ():
+        print(“Merhaba Dünya”)
+						   	</code>
+						</pre>
+						<pre>
+					   		<code>
+    def my_func(name):
+        print(“Merhaba”, name)
+						   	</code>
+						</pre>
+					</li>
+					<li>
+						<p><b>Geri Dönüşlü Fonsiyonlar</b> 
+							Geri dönüşlü fonsiyonlar çağırıldılarında bir ya da birden fazla tipi çıktı
+							olarak verebilirler. “return” kelimesinin ardından geri dönülecek
+							değişken ya da değer yazılır. Fonksiyon birden fazla değeri “tuple”
+							şeklinde geri döner.
+						</p>
+						<pre>
+					   		<code>
+    def my_func(number, power):
+        return number ** power
+						   	</code>
+						</pre>
+						<pre>
+					   		<code>
+    def my_func(number):
+        return number **2, number ** 1/2
+						   	</code>
+						</pre>
+					</li>
+					<li>
+						<p><b>Default Parameter:</b> 
+						 	Bazı fonsiyonların daha önceden belirlenmiş parametre değerlerleri
+							olabilir. Eğer fonsiyon çağırılırken bu parametre belirtilmezse daha
+							parametre önceden belirlenmiş olan değeri alır.
+						</p>
+						<pre>
+					   		<code>
+    def my_func(number, power=2):
+        return number **power
+						   	</code>
+						</pre>
+						<pre>
+					   		<code>
+    def my_func(number):
+        return number **2, number ** 1/2
+							</code>
+						</pre>
+						<p><b>NOT:</b> 
+								Fonkisyon çağırılırken verilen argumentler fonsiyon tanımındaki
+								parametrelerle aynı sırada olmalıdır.
+								Örneğin my_func(2, 3) ile my_func(3, 2) ifadeleri aynı değildir.
+						</p>
+					</li>
+				</ol>	
+			</section>
+			<section class="main-section" id="Functions">
+				<header>Functions</header>
+				<ol>
+					<li>
+						<p>
+							Objeler özellileri ve davranışları olan varlıklar olarak
+							düşünülebilir. Mesela kedilerin isim, renk, cinsiyet, tür gibi
+							özellikleri; miyavlamak, mırlamak, yürümek, koşmak gibi
+							davranışları vardır.
+						</p>
+						<ul>
+							<li>
+							OOP(Object Oriented Programming) programlamada özelliler veri
+							tipleriyle(ineger, string, float vb.) ; davranışlar ise fonksiyonlarla
+							temsil edilir.
+							</li>
+							<li>
+							Sınıflar ise objeleri oluşturmak için tanımlana şablonlar olarak
+							düşünülerbilir. Bu şablonları kullanarak birden çok objeyi çok
+							daha az kod yazarak hızlı bir şekilde üretebiliriz. Örneğin bir kedi
+							sınıfını kedinin renk, ağırlık özelliklerini içeren ve miyavlamak,
+							koşmak davranışlarını gerçekleştiren bir sınıf olarak
+							tanımlayabiliriz.
+							</li>
+						</ul>
+
+						<pre>
+					   		<code>
+    class Kedi:
+
+    # __init__ methodu diğer dillerde “constructor” olarak 
+    #geçer
+    def __init__(self, renk, agirlik):
+        self.renk = renk
+        self.agirlik = agirlik
+
+    def miyavla(self):
+        print(“miyav... miyav... miyav...”)
+
+    def kos(self):
+        print("Kosuyorum............")
+
+    #Kedi sınıfının bir örneğini isim ve rengini girerek
+    #tanımlayabiliriz
+    kedi = Kedi(“sarı”, 3.6)
+
+    #Oluşturduğumuz kedinin verilerine ve#methodlarına “.”)
+    #(nokta)operatörü ile ulaşabiliriz.
+    print(“Kedinin adı:”, kedi.isim)
+    kedi.miyavla()
+							</code>
+						</pre>
+						<p>
+							<b>Not:</b> “self” kelimesi “instance”yi yani sınıftan oluşturulan objeyi temsil eder.
+							Bu kelime aracılığı ile sınıfın içerisinde verilere ve methodlara ulaşılır.
+						</p>
+					</li>
+					<li>
+					</li>
+					<li>
+						<ul>
+							<li>
+								<p><b>Sınıf Değişkenleri ve Statik Methodlar:</b>
+									Sınıf Değişkeni: Sınıf değişkenleri sınıfın bütün
+									örnekleri(instance) için aynı olan veriler için kullanılır. Yukarıda
+									tanımlanan kedi sınıfında renk ve ağırlık kediden kediye değişir
+									yani yaratılan objeye özgüdür. Ancak bazı özellikeler sınıfın bütün
+									objelerinde aynı olabilir. Örneğin bütün kediler 4 ayaklıdır bu
+									yüzden ayak sayısı verisini “sınıf değişekeni” olarak
+									tanımlayabiliriz.
+								<p>
+							<pre>
+								<code>
+    class Kedi:
+        ayak_sayisi = 4
+
+    def __init__(self, renk, agirlik):
+        self.renk = renk
+        self.agirlik = agirlik
+
+    def miyavla(self):
+        print(“miyav... miyav... miyav...”)
+
+    def kos(self):
+        print(“Kedi kosuyor”)
+
+    #Sınıf değişkenlerine obje üzerinden de ulaşılabilir ancak
+    #sınıf değişkenlerine sınıfın adı ile ulaşmak daha doğru bir yaklaşımdır.
+    kedi2 = Kedi(“beyaz”, 4.9)
+    print(Kedi.ayak_sayisi)
+    print(kedi2.ayak_sayisi)
+								</code>
+							<pre>
+							</li>
+								<p><b>Static Methodlar:</b> Static methodları bir çağırılması herhangi bir obje
+									oluşturmayı gerektirmeyen durumlarda kullanabiliriz. Örneğin
+									kendimize bir matematik işlemeleri yapan bir sınıf tanımladığımızda
+									kullanacağımız methodlar genelde kullanılmadan önce obje
+									oluşturmaya ihtiyaç duymaz.
+								<p>
+							<pre>
+								<code>
+    class math:
+
+        @staticmethod
+        def absolute(sayi1, sayi2):
+           if sayi1 > sayi2:
+               return sayi1 - sayi2
+           else:
+               return sayi2 - sayi1
+
+        @staticmethod
+        def power(sayi):
+             return sayi ** 2
+             print("|sayi1 - sayi2| --> ", math.absolute(5, 10))
+             print("sayının karesi --> ", math.power(6))[201~
+								</code>
+							<pre>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<b>Inheritance:</b>
+				<ul>
+					<li>
+						Yukardaki kedi sınıfı gibi köpek, at ve kuş gibi başka sınıflarda
+						oluşturamak isteyebiliriz. Mesela verileri renk, boy; methodları
+						havla ve kos olan köpek sınıfı oluşturalım. Kedi sınıfı gibi bu
+						sınıfıda tanımlayabiliriz ancak daha sonra at, kuş vb. Birçok
+						hayvan sınıfını da tanımlamak istersek yazdığımız kod çok
+						kendini tekrarlamış olur.
+					</li>
+					<li>
+						 Mesela kedi ve köpek için düşünürsek. Hem kedide hem köpekte
+						 renk verisi ve kos methodu bulunuyor. Bu yüzden “Hayvanlar”
+						 adlı bir üst sınıf oluşturup bu özellikleri alt sınıflara miras
+						 bırakabiliriz. Böylelikle daha az kodla aynı işi yapabiliriz.
+					</li>
+					<pre>
+						<code>
+    class Hayvanlar:
+
+        def __init__(self, renk):
+            self.renk = renk
+            def kos(self):
+            print("Kosuyorum............")
+
+    class Kedi(Hayvanlar):
+
+        def __init__(self, renk, agirlik):
+            super().__init__(renk)
+            self.agirlik = agirlik
+
+        def miyavla(self):
+            print("miyav... miyav... miyav...")
+
+    class Kopek(Hayvanlar):
+
+        def __init__(self, renk, boy):
+           super().__init__(renk)
+           self.boy = boy
+           def havla(self):
+           print("hav... hav... hav...")
+						</code>
+					</pre>
+
+					<figure>
+							<img src="img/animal-uml.png">
+							<figcaption>
+								Yazılan kodun UML(Unified Modeling Language) diagramı.
+							</figcaption>
+					</figure>
+					<ul>
+				</ol>	
+			</section>
+			<section class="main-section" id="Moduls_and_Packets">
+				<header>Moduls and Packets</header>
+				<ol>
+					<li>
+					<ul>
+							<p>
+								<b>Modül Nedir?:</b> Modüller sınıfları, değişkenleri ve fonsiyonları içeren
+								“.py” uzantılı dosyalardır. Yazılan kodun farklı modüllere bölünmesi
+								aynı kodu tekrar kullanabilmemize ve kodu daha kolay
+								yönetebilmemize olanak sağlar. “fibonacci.py” adlı bir dosya
+								oluşturalım ve içine aşağıdaki kodu yazalım:
+							<p>
+							<pre>
+								<code>
+
+    # Fibonacci numbers module
+    def fib(n): # write Fibonacci series up to n
+        a, b = 0, 1
+        while a < n:
+            print(a, end=" ")
+            a, b = b, a+b
+        print()
+
+    def fib2(n): # return Fibonacci series up to n
+        result = []
+        a, b = 0, 1
+        while a &#60; n:
+            result.append(a)
+           a, b = b, a+b
+        return result
+								</code>
+							</pre>
+						</li>
+						<li>
+							<p>
+								<b>Modülleri import etme:</b> “import <modül ismi>” komutu modülleri
+								programımıza yüklemek için kullanılır. “fibonacci.py” ile aynı dosyada
+								bulunan başka bir python programından“fib” ve “fib2” fonksiyonlarını
+								kullanmak için aşşağıdaki kod kullanılır:
+							</p>
+
+							<pre>
+								<code>
+    import fibonacci
+
+    fibonacci..fib(3)
+    print(fibonacci.fib2(5))
+								</code>
+							</pre>
+						</li>
+						<li>
+							<p>
+								“math” ve “random” built-in modülleri kullanışlı modüllerdir. Bu
+								modüller import edildikten sonra kullanılabilirler. Moduller hakkında
+								daha fazla bilgi için “help()” ve “dir()” fonsiyonları kullanılabilir.
+							</p>
+						</li>
+						<li>
+							<p>
+								<b>Modülden fonksiyon import etme:</b> Eğer modülün tamamına ihtiyacımız
+								yoksa modüldeki fonsiyonları “from <modüle ismi> import <fonsiyon
+								ismi>” syntaxi ile import edebiliriz. Mesela “fibonacci” modulünden
+								sadece “fib()” fonsiyonuna ihtiyacımız varsa bu işlemi şu şekilde
+								yapabiliriz:
+							<p>
+							<pre>
+								<code>
+    from fibonacci import fib
+
+    print(fib(3))
+								</code>
+							</pre>
+							<p>
+								<b>Not:</b> “from fibonacci import *” komutu ile modüldeki tüm
+								fonksiyonları import edebiriz. Modül yerine fonksiyonları import
+								etmek bize fonksiyonları doğrudan kullanma imkanı sunar(built-in)
+								fonsiyonlar gibi ancak kodun okunabilirliğini azaltır, fonsiyonun hangi
+								pakete ait olduğunu anlamak güçleşir.
+							</p>
+							</li>
+							<li>
+								<p>
+									<b>Modülleri veya modül fonksiyonlarını başka ad ile import etme:</b> Bazı
+									modul isimleri uzun olabilir. Bu durumda “as” komutunu kullanarak
+									modulu istediğimiz isimle kullanabiliriz. Örneğin “pandas” kütüphanesi
+									genelde “pd” olarak import edilir.
+								</p>
+								<pre>
+									<code>
+    import fibbonacci as fibo
+
+    fibo.fib(5)
+    print(fibo.fib(7))
+									</code>
+								</pre>
+							</li>
+					</ul>
+					</li>
+			      		<li>
+							<p>
+								<b>Paketler:</b> Paketler modülleri ve alt paketleri içerirler. Kodlarımızı
+								düzenlemek için modullere ihtiyaç duyduğumuz gibi modülleri düzenlemek
+								için de paketlere ihtiyaç duyarız. Paketler şu şekilde oluşturulur.
+							</p>	
+							<ol>
+								<li>
+									<p>
+										<b>Adim</b>Adım: Bir dosya oluşturulur ve paketin ismi dosyaya verilir.
+									</p>
+									<img src="img/step-1.png">
+								</li>
+								<li>
+									<p>
+										<b>Adim</b> Adım: Paket dosyasının içinde “__init__.py” adlı python dosyası
+											oluşturulur.
+									</p>
+									<img src="img/step-2.png">
+								</li>
+								<li>
+									<p>
+										<b>Adim</b> Pakette olması istenen python dosyaları(“.py uzantılı modüller” )
+										paket dosyasının içine atılır. Daha önce oluşturduğumuz “fibonacci.py”
+										dosyasını bu pakete ekleyebiliriz. Oluşturduğumuz paketin içindeki modullere 
+										“.” operatörü ile ulaşabiliriz.
+									</p>
+									<img src="img/step-3.png">
+								</li>
+							</ol>
+								<pre>
+									<code>
+   import my_math_package.fibonacci as fibo
+
+   print(fibo.fib(3))
+									</code>
+								</pre>
+						</li>
+				</ol>	
+			</section>
+			<section class="main-section" id="References">
+				<header>References</header>
+				<ul>
+					<li><a href="https://www.w3schools.com/python/" target="_blank"> W3School Python Tutorial</a></li>
+					<li><a href="https://www.learnpython.org/" target="_blank">learnpython.org</a></li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html> 

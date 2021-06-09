@@ -1,0 +1,59 @@
+body { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	position: relative;
+}
+
+body::before { 
+	content: "";
+	background-image: url("img/movie-roll.jpg");	
+	opacity: .2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+	
+
+form { 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 1% 3%;
+	border-radius: 10px; 
+	width: 40%;
+	height: 700px;
+	text-align: left;
+	background-color:  rgba(56, 149, 211, .7);
+}
+
+.checkbox-container, .comment-container { 
+	display: flex;
+	flex-direction: column;
+}
+
+.comment-container { 
+	height: 15%;
+}
+
+#comment { 
+	height: 100%;
+}
+
+#submit { 
+	background-color: royalblue; 
+	height: 5%;
+	margin: 0px;
+	border: 0px;
+}
+
+#submit:hover { 
+	background-color: #004090;
+	cursor: pointer;
+}
+

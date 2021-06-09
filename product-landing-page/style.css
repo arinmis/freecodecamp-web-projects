@@ -1,0 +1,144 @@
+body { 
+	background-color: rgba(169, 169, 169, .5);
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#header, #products, #footer { 
+	display: flex;
+	justify-content: space-around;
+}
+
+#header { 
+	background-color: rgb(204,204,0);
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	align-items: center;
+	z-index: 1;
+}
+
+#logo { 
+	display: flex; 
+} 
+
+a { 
+	text-decoration: none 
+} 	
+
+#content { 
+	margin: 60px 120px ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#features { 
+	background-color: blue;
+	width: 100%;
+	height: auto;
+	margin: 40px;
+}
+
+#video { 
+	width: 100%;
+	height: 0;
+	padding-bottom:56.25%;
+	position: relative;
+}
+
+#video iframe { 
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+#features { 
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: rgba(169, 169, 169, .7);
+	border-radius: 1%;	
+}
+
+#product-feature { 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 2%;
+}
+
+#product-card { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 250px;
+	background-color: green;
+	margin: 60px;
+	background-color: rgba(169, 169, 169, .7);
+	border-radius: 3%;	
+}
+
+#product-card:hover { 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#product-card img { 
+	width: 100%;
+	height: 130px;
+	
+}
+
+#form { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 320px;
+	background-color: rgba(169, 169, 169, .7);
+	border-radius: 1%;	
+}
+
+#footer { 
+	background-color: rgb(204,204,0);
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.button { 
+	margin: 3%;
+	border: 0px;
+	background-color: rgb(255, 140,0);
+	border-radius: 5%;	
+}
+
+.button:hover { 
+	background-color: rgb(204,204,0);
+	cursor: pointer;
+}
+
+/* for smaller devices */
+@media (max-width: 600px) { 
+	#products {
+		flex-direction: column;
+		align-items: center;
+    }
+
+	#content { 
+		margin: 0px;
+	}
+
+	#logo, #footer { 
+		display: none;
+	}
+} 

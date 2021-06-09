@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey: Favorite Movie</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1 id="title">Survey: Your movie taste</h1>
+		<p id="description">What kind of movies do you like?</p>
+
+		<form id="survey-form" action="thanks.html">
+
+			<!--name-->
+			<div>
+				<label for="name" id="name-label">Name:</label>
+				<input type="text" id="name" placeholder="Mustafa Arinmis" required>
+			</div>
+			
+			<!--email-->
+			<div>
+				<label for="email" id="email-label">Email:</label>
+				<input type="email" id="email" placeholder="someone@example.com" required> 
+			</div>
+
+			<!--age-->
+			<div>
+				<label for="number" id="number-label">Age:</label>
+				<input type="number" id="number" min="0" max="150" placeholder="21"> 
+			</div>
+
+			<!--dropdown-->
+			<div>
+				<label for="dropdown">Choose a genre:</label>
+				<select id="dropdown" name="cars">
+				  <option>Science Fiction</option>
+				  <option>Horror</option>
+				  <option>Drama</option>
+				  <option>Comedy</option>
+				  <option>Crime</option>
+				</select>
+			</div>
+
+			<!--select-->
+			<div>
+				<p>Select your gender:</p>
+				<label for="male">Male</label>
+				<input type="radio" id="male" name="gender" value="gender"> 
+				<label for="female">Female</label>
+				<input type="radio" id="female" name="gender" value="gender"> 
+			</div>
+
+			<!--checkbox-->
+			<div class="checkbox-container"> 
+				<p>Select movies that you like or you may like:</p>
+				<div>
+					<label for="dark-knight">The Dark Knight</label>
+					<input type="checkbox" id="dark-knight" value="dark-knight"> 
+				</div>
+				<div>
+					<label for="pulp-fiction">Pulp Fiction</label>
+					<input type="checkbox" id="pulp-fiction" value="pulp-ficotion"> 
+				</div>
+				<div>
+					<label for="forest-gump">Forest Gump</label>
+					<input type="checkbox" id"forest-gump" value="forest-gump"> 
+				</div>
+				<div>
+					<label for="inception">Inception</label>
+					<input type="checkbox" id"inception" value="inception"> 
+				</div>
+				<div>
+					<label for="whiplash">Whiplash</label>
+					<input type="checkbox" id"whiplash" value="whiplash"> 
+				</div>
+				<div>
+					<label for="oldboy">Oldboy</label>
+					<input type="checkbox" id"oldboy" value="oldboy"> 
+				</div>
+			</div>
+
+			<!--checkbox-->
+			<div class="comment-container">
+				<label for="comment">Additional Comment:</label>
+				<textarea id="comment" placeholder="Please write what you think..."></textarea>
+			</div>
+
+			<!--submit-->
+			<input type="submit" id="submit" value="Submit"/> 
+			
+		</form>
+	</body>
+ 
+</html>
